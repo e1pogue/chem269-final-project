@@ -103,7 +103,7 @@ Visual evidence of repeating CF₂ units across detected features.
   - [m/z vs Retention Time Visualization](results/figures/TIC.png):
 Overview of feature distribution and clustering.
 
-  - Foam vs Water PFAS Heatmap- [unclustered](results/figures/heatmap.png) and [clustered]((results/figures/heatmap_clustered.png)):
+  - Foam vs Water PFAS Heatmap- [unclustered](results/figures/heatmap.png) and [clustered](results/figures/heatmap_clustered.png):
 Comparative visualization of enrichment patterns across sample types.
 
 
