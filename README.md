@@ -22,28 +22,43 @@ PFAS Suspect Screening & Homologous Series Analysis in Environmental HRMS Data
 The analysis pipeline combines mass spectrometry preprocessing with cheminformatics and statistical visualization:
 
   1. Data Preparation
+     
     - mzML file import
+    
     - MS1 feature extraction (m/z, retention time, intensity)
+    
     - Noise filtering and blank subtraction
 
-  2. Feature Engineering
+  3. Feature Engineering
+     
     - Cross-sample feature alignment (m/z and RT tolerance)
+    
     - Total Ion Current normalization
+    
     - Feature matrix construction
 
-  3. Suspect Screening
+  5. Suspect Screening
+     
     - Exact mass matching to PFAS suspect database
+    
     - ppm error calculation
+    
     - Candidate feature annotation
 
-  4. Homologous Series Discovery
+  7. Homologous Series Discovery
+     
     - Kendrick Mass Defect (CF₂ base) transformation
+    
     - Series detection via aligned KMD patterns
+    
     - Homologous family grouping
 
-  5. Comparative Analysis
+  9. Comparative Analysis
+      
     - PFAS feature subsetting
+    
     - Foam vs water intensity comparison
+    
     - Hierarchical clustering and heatmap visualization
 
 **Route Design and Completion:**
