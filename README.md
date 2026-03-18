@@ -8,11 +8,11 @@ PFAS Suspect Screening & Homologous Series Analysis in Environmental HRMS Data
 **Data Sources:**
 
 - Environmental samples from the Tijuana River
-  - [Surface foam HRMS data]
-  - [Underlying water HRMS data]
-  - [Laboratory blank HRMS data]
+  - [Surface foam HRMS data](https://drive.google.com/file/d/1pMrlSOLAbiBwIekTIy3NpCNQ_OIDeYsR/view?usp=sharing)
+  - [Underlying water HRMS data](https://drive.google.com/file/d/11gIeZFYEsco-g8TouCeqX2OUQUcPCA5F/view?usp=sharing)
+  - [Laboratory blank HRMS data](https://drive.google.com/file/d/14KtKFzUTsuDFxcGV55HjSxxcs8DLJcSg/view?usp=sharing)
 - Reference database
-  - [NORMAN Suspect List Exchange PFAS suspect list] (4,777 compounds)
+  - [NORMAN Suspect List Exchange PFAS suspect list](https://zenodo.org/records/13808949?) (4,777 compounds)
     - Exact masses
     - Molecular formulas
     - Compound names
@@ -21,30 +21,30 @@ PFAS Suspect Screening & Homologous Series Analysis in Environmental HRMS Data
 
 The analysis pipeline combines mass spectrometry preprocessing with cheminformatics and statistical visualization:
 
-1. Data Preparation
-  - mzML file import
-  - MS1 feature extraction (m/z, retention time, intensity)
-  - Noise filtering and blank subtraction
+  1. Data Preparation
+    - mzML file import
+    - MS1 feature extraction (m/z, retention time, intensity)
+    - Noise filtering and blank subtraction
 
-2. Feature Engineering
-  - Cross-sample feature alignment (m/z and RT tolerance)
-  - Total Ion Current normalization
-  - Feature matrix construction
+  2. Feature Engineering
+    - Cross-sample feature alignment (m/z and RT tolerance)
+    - Total Ion Current normalization
+    - Feature matrix construction
 
-3. Suspect Screening
-  - Exact mass matching to PFAS suspect database
-  - ppm error calculation
-  - Candidate feature annotation
+  3. Suspect Screening
+    - Exact mass matching to PFAS suspect database
+    - ppm error calculation
+    - Candidate feature annotation
 
-4. Homologous Series Discovery
-  - Kendrick Mass Defect (CF₂ base) transformation
-  - Series detection via aligned KMD patterns
-  - Homologous family grouping
+  4. Homologous Series Discovery
+    - Kendrick Mass Defect (CF₂ base) transformation
+    - Series detection via aligned KMD patterns
+    - Homologous family grouping
 
-5. Comparative Analysis
-  - PFAS feature subsetting
-  - Foam vs water intensity comparison
-  - Hierarchical clustering and heatmap visualization
+  5. Comparative Analysis
+    - PFAS feature subsetting
+    - Foam vs water intensity comparison
+    - Hierarchical clustering and heatmap visualization
 
 **Route Design and Completion:**
 This project was structured as a guided computational “climbing route”:
@@ -56,9 +56,13 @@ Routesetter: Elizabeth Pogue
 Exercises Completed
 
 ✅ Exercise 0 — Data cleaning and blank subtraction
+
 ✅ Exercise 1 — Feature alignment and normalization
+
 ✅ Exercise 2 — PFAS suspect screening
+
 ✅ Exercise 3 — Kendrick Mass Defect homologous series discovery
+
 ✅ Exercise 4 — Foam vs water comparative enrichment analysis
 
 All route objectives were successfully completed, producing interpretable PFAS screening outputs and visualizations.
@@ -67,19 +71,19 @@ All route objectives were successfully completed, producing interpretable PFAS s
 
 Key outputs from the workflow include:
 
-- Suspect PFAS Feature Table: 
+  - Suspect PFAS Feature Table- [Foam](results/tables/foam_suspects.csv) and [Water](results/tables/water_suspects.csv): 
 Annotated candidate PFAS detected in foam and water samples.
 
-- Homologous Series List:
+  - Homologous Series List- [Foam](results/tables/foam_homologue_table) and [Water](results/tables/water_homologue_table):
 Identified fluorinated series consistent with PFAS structural patterns.
 
-- Kendrick Mass Defect Plot:
+  - Kendrick Mass Defect Plot- [Foam](results/figures/foam_kmd_plot) and [Water](results/figures/water_kmd_plot):
 Visual evidence of repeating CF₂ units across detected features.
 
-- m/z vs Retention Time Visualization:
+  - [m/z vs Retention Time Visualization](results/figures/TIC):
 Overview of feature distribution and clustering.
 
-- Foam vs Water PFAS Heatmap:
+  - Foam vs Water PFAS Heatmap- [unclustered](results/figures/heatmap) and [clustered]((results/figures/heatmap_clustered)):
 Comparative visualization of enrichment patterns across sample types.
 
 **Interpretations, Limitations, and Next Steps:**
@@ -107,7 +111,9 @@ Comparative visualization of enrichment patterns across sample types.
   - Google Colab–compatible
 
 - Required Packages
+
 '''bash
+
 pip install pymzml pyopenms pandas numpy matplotlib seaborn
 
 - How to Run
