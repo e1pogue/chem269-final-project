@@ -3,7 +3,9 @@ PFAS Suspect Screening & Homologous Series Analysis in Environmental HRMS Data
 
 **Project Summary:** This project develops a computational workflow for nontargeted analysis of per- and polyfluoroalkyl substances (PFAS) in environmental samples using high-resolution mass spectrometry (HRMS). The workflow integrates feature detection, alignment, suspect screening, and homologous series discovery to systematically identify PFAS signatures in complex spectra. A comparative analysis of surface foam and underlying water samples highlights enrichment patterns and demonstrates the value of computational tools for environmental contaminant screening.
 
+
 **Biological Problem and Motivation:** Per- and polyfluoroalkyl substances (PFAS), often called “forever chemicals,” are highly persistent environmental contaminants linked to ecological and human health risks. Their structural diversity, wide range in environmental concentrations, and occurrence in complex mixtures make manual spectral interpretation impractical. Advanced computational workflows are essential to detect, prioritize, and interpret PFAS signals in HRMS data, particularly in emerging contamination scenarios such as marine surface foam enrichment.
+
 
 **Data Sources:**
 
@@ -16,6 +18,7 @@ PFAS Suspect Screening & Homologous Series Analysis in Environmental HRMS Data
     - Exact masses
     - Molecular formulas
     - Compound names
+
    
 **Computational Approach & Workflow Overview:** 
 
@@ -61,6 +64,7 @@ The analysis pipeline combines mass spectrometry preprocessing with cheminformat
     
     - Hierarchical clustering and heatmap visualization
 
+
 **Route Design and Completion:**
 This project was structured as a guided computational “climbing route”:
 
@@ -82,6 +86,7 @@ Exercises Completed
 
 All route objectives were successfully completed, producing interpretable PFAS screening outputs and visualizations.
 
+
 **Results Summary:**
 
 Key outputs from the workflow include:
@@ -89,17 +94,18 @@ Key outputs from the workflow include:
   - Suspect PFAS Feature Table- [Foam](results/tables/foam_suspects.csv) and [Water](results/tables/water_suspects.csv): 
 Annotated candidate PFAS detected in foam and water samples.
 
-  - Homologous Series List- [Foam](results/tables/foam_homologue_table) and [Water](results/tables/water_homologue_table):
+  - Homologous Series List- [Foam](results/tables/foam_homologue_table.csv) and [Water](results/tables/water_homologue_table.csv):
 Identified fluorinated series consistent with PFAS structural patterns.
 
-  - Kendrick Mass Defect Plot- [Foam](results/figures/foam_kmd_plot) and [Water](results/figures/water_kmd_plot):
+  - Kendrick Mass Defect Plot- [Foam](results/figures/foam_kmd_plot.png) and [Water](results/figures/water_kmd_plot.png):
 Visual evidence of repeating CF₂ units across detected features.
 
-  - [m/z vs Retention Time Visualization](results/figures/TIC):
+  - [m/z vs Retention Time Visualization](results/figures/TIC.png):
 Overview of feature distribution and clustering.
 
-  - Foam vs Water PFAS Heatmap- [unclustered](results/figures/heatmap) and [clustered]((results/figures/heatmap_clustered)):
+  - Foam vs Water PFAS Heatmap- [unclustered](results/figures/heatmap.png) and [clustered]((results/figures/heatmap_clustered.png)):
 Comparative visualization of enrichment patterns across sample types.
+
 
 **Interpretations, Limitations, and Next Steps:**
 
@@ -118,6 +124,7 @@ Comparative visualization of enrichment patterns across sample types.
   - Quantitative calibration for targeted PFAS
   - Expanded suspect libraries
   - Time-series monitoring for environmental trends
+
 
 **Reproducibility Instructions:**
 
